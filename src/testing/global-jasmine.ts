@@ -1,9 +1,6 @@
-import { Component } from '@angular/core';
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html'
-})
-export class AppComponent { }
+import jasmineRequire from 'jasmine-core/lib/jasmine-core/jasmine.js';
+
+window['jasmineRequire'] = jasmineRequire;
 
 
 /*
