@@ -109,7 +109,7 @@ describe('WelcomeComponent', () => {
     expect(userService === componentUserService).toBe(true);
   });
 
-  it('stub object and injected UserService should not be the same', () => {
+  xit('stub object and injected UserService should not be the same', () => {
     expect(userServiceStub === userService).toBe(false);
 
     // Changing the stub object has no effect on the injected service

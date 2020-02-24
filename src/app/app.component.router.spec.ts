@@ -45,14 +45,14 @@ describe('AppComponent & RouterTestingModule', () => {
     .compileComponents();
   }));
 
-  it('should navigate to "Dashboard" immediately', fakeAsync(() => {
+  xit('should navigate to "Dashboard" immediately', fakeAsync(() => {
     createComponent();
     tick(); // wait for async data to arrive
     expect(location.path()).toEqual('/dashboard', 'after initialNavigation()');
     expectElementOf(DashboardComponent);
   }));
 
-  it('should navigate to "About" on click', fakeAsync(() => {
+  xit('should navigate to "About" on click', fakeAsync(() => {
     createComponent();
     click(page.aboutLinkDe);
     // page.aboutLinkDe.nativeElement.click(); // ok but fails in phantom
@@ -62,7 +62,7 @@ describe('AppComponent & RouterTestingModule', () => {
     expectElementOf(AboutComponent);
   }));
 
-  it('should navigate to "About" w/ browser location URL change', fakeAsync(() => {
+  xit('should navigate to "About" w/ browser location URL change', fakeAsync(() => {
     createComponent();
     location.simulateHashChange('/about');
     // location.go('/about'); // also works ... except, perhaps, in Stackblitz
